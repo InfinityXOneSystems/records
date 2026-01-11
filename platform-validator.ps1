@@ -70,3 +70,5 @@ if ($Mode -in @("heal","full")) {
 
 $RESULT | ConvertTo-Json -Depth 12 |
   Out-File "$REPORT_DIR\report-$TIMESTAMP.json" -Encoding utf8
+
+# Auto-fix and cleanup applied as part of Phase 1.
